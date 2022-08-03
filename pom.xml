@@ -63,8 +63,6 @@
                 <configuration>
                     <source>17</source>
                     <target>17</target>
-                    <source>16</source>
-                    <target>16</target>
                 </configuration>
             </plugin>
         </plugins>
