@@ -2,7 +2,8 @@ package ru.job4j.oop;
 
 public class Cat {
 
-    private String name, food;
+    private String name;
+    private String food;
 
     public void show() {
         System.out.println(this.name);
