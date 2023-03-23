@@ -5,8 +5,8 @@ public class Cat {
     private String name;
     private String food;
 
-    public void show() {
-        System.out.println(this.name);
+    public void show() { // создаем этот метод, чтобы выводить на консоль содержимое поле food
+        System.out.println(this.name); // для того, чтобы обратиться к полю объекта, нам нужно использовать ключевое слово this
         System.out.println(this.food);
     }
 
