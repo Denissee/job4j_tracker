@@ -32,11 +32,9 @@ public class Calculator {
         System.out.println(rls);
         int fin = Calculator.minus(11);
         System.out.println(fin);
-        Calculator separate  = new Calculator();
-        int end = separate.divide(37);
+        int end = calc.divide(37);
         System.out.println(end);
-        Calculator all = new Calculator();
-        int allll = all.sumAllOperation(3);
+        int allll = calc.sumAllOperation(3);
         System.out.println("Итого:" + allll);
     }
 }
