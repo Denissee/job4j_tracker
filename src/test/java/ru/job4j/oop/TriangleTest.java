@@ -12,7 +12,7 @@ public class TriangleTest {
         Point c = new Point(0, 4);
         Triangle triangle = new Triangle(a, b, c);
         double rsl = triangle.area();
-        double expected = -1;
+        double expected = 8;
         assertThat(rsl).isCloseTo(expected, offset(0.001));
     }
 }
