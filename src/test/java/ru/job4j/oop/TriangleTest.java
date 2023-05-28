@@ -20,7 +20,7 @@ public class TriangleTest {
     public void when12and75and67Then1() {
         Point a = new Point(-1, -1);
         Point b = new Point(-1, -1);
-        Point c = new Point(-1, -1);
+        Point c = new Point(-1, 1);
         Triangle triangle = new Triangle(a, b, c);
         double rsl = triangle.area();
         double expected = -1;
