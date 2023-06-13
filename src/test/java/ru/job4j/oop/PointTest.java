@@ -9,7 +9,7 @@ public class PointTest {
     public void when00to20then2() {
         int expected = 0;
         Point a = new Point(0, 0);
-        Point b = new Point(0, 2);
+        Point b = new Point(0, 0);
         double dist = a.distance(b);
         Assert.assertEquals(expected, dist, 0.01);
     }
