@@ -15,7 +15,7 @@ public class Tracker {
         Item rsl = null;
         for (int index = 0; index < size; index++) {
             Item item = items[index];
-            if (item.getId() == id) {
+            if (item.setId() == id) {
                 rsl = item;
                 break;
             }
