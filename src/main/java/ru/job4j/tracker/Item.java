@@ -6,6 +6,10 @@ public class Item {
 
     private String name;
 
+    public int getId() {
+        return id;
+    }
+
     public Item() {
     }
 
@@ -28,5 +32,9 @@ public class Item {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public static void main(String[] args) {
+        Item first = new Item();
     }
 }
