@@ -1,10 +1,10 @@
 package ru.job4j.inheritance;
 
 public class Engineer extends Profession {
-    private int experiance;
+    private int experience;
 
-    public Engineer(int experiance, boolean degree) {
+    public Engineer(int experience, boolean degree) {
         super(degree);
-        this.experiance = experiance;
+        this.experience = experience;
     }
 }
