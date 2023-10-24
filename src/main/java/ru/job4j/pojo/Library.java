@@ -4,8 +4,8 @@ public class Library {
     public static void main(String[] args) {
         Book first = new Book("Clean code", 12);
         Book second = new Book("Sky", 183);
-        Book third = new Book ("Miror", 367);
-        Book forth = new Book ("Ocean", 293);
+        Book third = new Book("Slow", 367);
+        Book forth = new Book("Ocean", 293);
         Book[] num = new Book[4];
         num[0] = first;
         num[1] = second;
