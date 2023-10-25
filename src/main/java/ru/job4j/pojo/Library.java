@@ -25,7 +25,7 @@ public class Library {
         }
         System.out.println("Show only Cean Code");
         for (int i = 0; i < num.length; i++) {
-            if (num[i].getName().equals("Clean code")) {
+            if ("Clean code".equals(num[i].getName())) {
                 System.out.println(num[i].getName());
             }
         }
