@@ -52,3 +52,4 @@ public class TrackerTest {
         assertThat(result[1].getName()).isEqualTo(second.getName());
     }
 }
+
