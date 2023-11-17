@@ -27,10 +27,9 @@ public class Item {
         return created;
     }
 
-    public Item(String name, int id, LocalDateTime created) {
+    public Item(String name, int id) {
         this.id = id;
         this.name = name;
-        this.created = created;
     }
 
     public void setId(int id) {
