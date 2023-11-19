@@ -23,13 +23,13 @@ public class Item {
         this.name = name;
     }
 
-    public static LocalDateTime getCreated() {
-        return created;
-    }
-
     public Item(String name, int id) {
         this.id = id;
         this.name = name;
+    }
+
+    public static LocalDateTime getCreated() {
+        return created;
     }
 
     public void setId(int id) {
