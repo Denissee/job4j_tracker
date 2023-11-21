@@ -12,6 +12,8 @@ public class Item {
 
     private static LocalDateTime created = LocalDateTime.now();
 
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
+
     public int getId() {
         return id;
     }
@@ -46,6 +48,15 @@ public class Item {
 
     public static void main(String[] args) {
         Item first = new Item();
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                 "id=" + id
+                + ", name='" + name + '\''
+                + ", created=" + created.format(FORMATTER)
+                + '}';
     }
 }
 
