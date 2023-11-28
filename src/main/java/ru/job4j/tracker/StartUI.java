@@ -4,22 +4,26 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class StartUI {
-
-    public static void init(Scanner scanner, Tracker tracker) {
+    public void init(Scanner scanner, Tracker tracker) {
         boolean run = true;
         while (run) {
             showMenu();
             System.out.println("Выбрать: ");
-            int select = Integer.parseInt(scanner.next());
-            if (select != 6) {
-                System.out.println("Пользователь выбрал: " + select);
-            } else {
+            int select = Integer.parseInt(scanner.nextLine());
+            if (select == 0) {
+                System.out.println("===Создание новой заявки====");
+                System.out.print("Введите имя: ");
+                String name = scanner.nextLine();
+                Item item = new Item(name);
+                tracker.add(item);
+                System.out.println("Добавленная заявка: " + item);
+            } else if (select == 6) {
                 run = false;
             }
         }
     }
 
-    private static void showMenu() {
+    private void showMenu() {
         String[] menu = {
                 "Добавить новую заявку", "Показать все заявки", "Изменить заявку",
                 "Удалить заявку", "Показать заявку по id", "Показать заявки по имени",
