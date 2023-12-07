@@ -10,3 +10,4 @@ public class College {
         System.out.println(freshfromObj);
     }
 }
+
