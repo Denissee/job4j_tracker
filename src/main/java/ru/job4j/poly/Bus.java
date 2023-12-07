@@ -3,13 +3,13 @@ package ru.job4j.poly;
 public class Bus implements Transport {
 
     @Override
-    public String go() {
-        return null;
+    public void go() {
+        System.out.println("Маршрут перестроен.");
     }
 
     @Override
-    public int pass(String num) {
-        return 0;
+    public void pass(String num) {
+        System.out.println("Количество пассажиров состовляет " + num);
     }
 
     @Override

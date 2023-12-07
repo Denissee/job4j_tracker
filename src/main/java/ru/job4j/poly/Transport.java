@@ -2,9 +2,9 @@ package ru.job4j.poly;
 
 public interface Transport {
 
-    String go();
+    void go();
 
-    int pass(String num);
+    void pass(String num);
 
     int fill(int liters);
 }
