@@ -3,8 +3,8 @@ package ru.job4j.tracker;
 public class StartUI {
     private final Output output;
 
-    public StartUI(Output out) {
-        this.output = out;
+    public StartUI(Output output) {
+        this.output = output;
     }
 
     public void init(Input input, Tracker tracker, UserAction[] actions) {
@@ -40,14 +40,3 @@ public class StartUI {
         new StartUI(output).init(input, tracker, actions);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
