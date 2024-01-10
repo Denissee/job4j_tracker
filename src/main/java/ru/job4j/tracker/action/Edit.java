@@ -5,39 +5,30 @@ import ru.job4j.tracker.Item;
 import ru.job4j.tracker.Output;
 import ru.job4j.tracker.Tracker;
 
-public class Replace implements UserAction {
+public class Edit implements UserAction {
     private final Output out;
 
-    public Replace(Output out) {
+    public Edit(Output out) {
         this.out = out;
     }
 
     @Override
     public String name() {
-        return "Изменить заявку";
+        return "Edit Action";
     }
 
     @Override
     public boolean execute(Input input, Tracker tracker) {
-        out.println("=== Редактирование заявки ===");
-        int id = input.askInt("Enter id: ");
-        String name = input.askStr("Введите имя: ");
+        out.println("=== Edit item ===");
+        int id = input.askInt("press id of item to replace: ");
+        String name = input.askStr("press name of new item: ");
         Item item = new Item(name);
         if (tracker.replace(id, item)) {
-            out.println("Заявка изменена успешно.");
+            out.println("Item with ID " + id + "edited");
         } else {
-            out.println("Ошибка замены заявки.");
+            out.println("Item with ID" + id + "is not edited");
         }
         return true;
     }
 }
-
-
-
-
-
-
-
-
-
 
