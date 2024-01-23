@@ -13,7 +13,7 @@ public class UserStore {
         if (res == null) {
             throw new UserNotFoundException("could not find" + login);
         }
-        return null;
+        return res;
     }
 
     public static boolean validate(User user) throws UserInvalidException {
